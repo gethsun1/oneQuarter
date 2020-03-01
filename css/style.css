@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  font-family: Montserrat Alternates;
 }
 
 .navbar .nav-link {
@@ -9,7 +10,25 @@ body {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
 
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+.imgal > div img {
+   float: right;
+}
 .navbar .nav-item.active {
   border-left: #444 3px solid;
 }
